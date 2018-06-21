@@ -5,39 +5,12 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Useful event target example</title>
-    <style>
-        div {
-            background-color: red;
-            height: 5px;
-            width: 1%;
-            float: left;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" media="screen" href="eventtarget.css" />
 </head>
 
 <body>
-    <script>
-        for (var i = 1; i <= 5000; i++) {
-            var myDiv = document.createElement('div');
-            document.body.appendChild(myDiv);
-        }
 
-        function random(number) {
-            return Math.floor(Math.random() * number);
-        }
-
-        function bgChange() {
-            var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
-            return rndCol;
-        }
-        var divs = document.querySelectorAll('div');
-
-        for (var i = 0; i < divs.length; i++) {
-            divs[i].onmouseenter = function(e) {
-                e.target.style.backgroundColor = bgChange();
-            }
-        }
-    </script>
+    <script src="eventtarget.js"></script>
 </body>
 
 </html>
