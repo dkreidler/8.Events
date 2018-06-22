@@ -1,4 +1,4 @@
-for (var i = 1; i <= 5000; i++) {
+for (var i = 1; i <= 10000; i++) {
     var myDiv = document.createElement('div');
     document.body.appendChild(myDiv);
 }
